@@ -90,7 +90,7 @@
     "postinstall": "npm run build:prod",
     "clean": "rimraf lib/ dist/",
     "bundle-dts": "tsc --noEmit --allowJs dts-config.js && dts-bundle-generator --config dts-config.js",
-    "tsc": "ttsc -p tsconfig.prod.json",
+    "tsc": "tsc -p tsconfig.prod.json",
     "tsc-watch": "npm run tsc -- --watch --preserveWatchOutput",
     "tsc-verify": "node website/scripts/generate-versions-dts.js && tsc -b tsconfig.composite.json",
     "lint": "npm-run-all -p lint:**",
